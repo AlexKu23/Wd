@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ruslan+Display&display=swap');
+.background {
+	background: url(https://cdnn21.img.ria.ru/images/07e5/03/10/1601501743_0:160:3072:1888_1920x0_80_0_0_78badd274504c8ae3a6896ca55cdcef2.jpg);
+	filter: blur(5px);
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: -1;
+}
+html {
+font-family: "Ruslan Display", sans-serif;
+}
+ul {
+	background-color: white;
+}
+.mainNav {
+	list-style: none;
+    display: flex;
+    padding: 8px 0;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    margin: 0;
+
+}
+.mainNav li {
+}
+.mainNav a {
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+    padding: 8px;
+	display: block;
+	border-bottom: none;
+    display: flex;
+    align-items: center;
+}
+.mainNav a:hover {
+	font-weight: bold;
+}
+.mainNav a:before {
+	content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+	background-image: url(images/file.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+    background-size: 16px;
+    margin-right: 8px;
+}
+.mainNav li:last-of-type a {
+	border-right: 1px dashed #3b0edf;
+}
+.mainNav a:hover:before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	font-weight: bold;
+	margin-right: 4px;
+	background-size: 16px;
+	background-position: 0 50%;
+}
+.home .homeLink:before, .home a:hover.homeLink:before, .features .featuresLink:before, .experts .expertsLink:before,
+.quiz .quizLink:before, .projects .projectsLink:before, .horoscopes .horoscopesLink:before {
+	background-position: 0 100%;
+	
+}
+.grid {
+	margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) ;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.card {
+background-color: rgba(255, 255, 255, 0.6);
+padding: 10px;
+border: 5px dashed #12263A;
+border-radius: 15px;
+box-shadow: 0px 5px 5px -5px gray;
+transition: 0.5s;
+}
+.card:hover {
+	background-color: white;
+}
+.card__title {
+font-size: 23px;
+font-weight: bold;
+margin-bottom: 10px;
+color: rgb(0, 0, 0);
+}
+.card__content {
+font-size: 14px;
+color: rgb(0, 0, 0);
+}
+.title {
+	font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center; 
+}
