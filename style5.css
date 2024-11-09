@@ -78,9 +78,9 @@ nav li {
 	padding: 0;
 	margin: 0;
 	list-style: none;	
+	width: 100%;
 }
 nav a {
-	float: left;
 	font-size: .8em;	
 	color: white;
 	font-weight: normal;
@@ -88,9 +88,12 @@ nav a {
 	padding: 10px;
 	border-right: 1px dashed rgba(255,255,255,.75);
 	transition: all .5s;
+	width: 100%;
+	display: block;
+	text-align: center;
 }
-nav li:last-of-type a {
-	border-right: none;	
+nav li:first-of-type a {
+	border-left: 1px dashed rgba(255,255,255,.75);	
 }
 nav a:hover {
 	background-color: rgb(93,43,78);
@@ -209,6 +212,9 @@ img.right {
 	.sidebar1 {
 		order: 1;
 	}
+	.sidebar2 {
+		order: 2;
+	}
 	header h1 {
 		text-align: center;
 		font-size: 1.3em;
@@ -224,6 +230,9 @@ img.right {
 		display: block;
 		border: none;
 		width: 100%;
+	}
+	nav li:first-of-type a {
+		border: none;
 	}
 	nav ul {
 		flex-direction: column;
